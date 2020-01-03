@@ -5,7 +5,7 @@
 
 // use require without a reference to ensure a file is bundled
 // require('./example')
-const bookEvents = require('./books/get')
+const bookEvents = require('./book/get')
 
 $(() => {
   $('#getBooks').on('submit', bookEvents.onGetBook)
