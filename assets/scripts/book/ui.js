@@ -2,10 +2,10 @@ const booksTemplate = require('../templates/books.handlebars')
 
 const onGetBooksSuccess = data => {
   const booksHtml = booksTemplate({ books: data.books })
-  $('#Demo').html(booksHtml)
+  $('#bookList').html(booksHtml)
 }
 const onGetBooksFailure = () => {
-  $('#Demo').html('TRY AGAIN')
+  $('#bookList').html('TRY AGAIN')
 }
 
 module.exports = {
