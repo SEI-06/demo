@@ -1,15 +1,15 @@
 const booksTemplate = require('../templates/books.handlebars')
 
-const onGetBooksSuccess = data => {
+const getBooksSuccess = data => {
   const booksHtml = booksTemplate({ books: data.books })
   console.log(data)
   $('#Demo').html(booksHtml)
 }
-const onGetBooksFailure = () => {
+const getBooksFailure = () => {
   $('#Demo').html('TRY AGAIN')
 }
 
 module.exports = {
-  onGetBooksFailure,
-  onGetBooksSuccess
+  getBooksFailure,
+  getBooksSuccess
 }
