@@ -1,0 +1,14 @@
+{{#each books as |book|}}
+  <section data-id="{{book.id}}">
+    <h5>Title:</h5>
+      <p>{{book.title}}</p>
+    <h5>Author:</h5>
+      <p>
+        {{#if book.author}}
+          {{book.author}}
+        {{else}}
+          No author provided.
+          {{/if}}
+      </p>
+    </section>
+{{/each}}
