@@ -1,7 +1,7 @@
-const booksTemplate = require(../templates/books.handlebars)
+const booksTemplate = require('../templates/books.handlebars')
 
 const onGetBooksSuccess = data => {
-  const booksHtml = booksTemplate({ books: data.books})
+  const booksHtml = booksTemplate({ books: data.books })
   $('#Demo').html(booksHtml)
 }
 const onGetBooksFailure = () => {
