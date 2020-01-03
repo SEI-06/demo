@@ -8,5 +8,5 @@
 const bookEvents = require('./book/get')
 
 $(() => {
-  $('#getBooks').on('submit', bookEvents.onGetBook)
+  $('#getBooks').on('click', bookEvents.onGetBook)
 })
